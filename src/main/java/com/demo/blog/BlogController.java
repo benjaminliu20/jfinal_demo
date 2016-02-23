@@ -37,6 +37,11 @@ public class BlogController extends Controller {
 		Blog.me.deleteById(getParaToInt());
 		redirect("/blog");
 	}
+	
+	public void selectOne() {
+		Blog blog = Blog.me.findById(1, "id,content");
+		System.out.println(blog);
+	}
 }
 
 
