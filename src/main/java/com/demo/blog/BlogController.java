@@ -42,6 +42,11 @@ public class BlogController extends Controller {
 		Blog blog = Blog.me.findById(1, "id,content");
 		System.out.println(blog);
 	}
+	
+	public void selectTwo() {
+		Blog blog = Blog.me.findById(2, "id,content");
+		System.out.println(blog);
+	}
 }
 
 
