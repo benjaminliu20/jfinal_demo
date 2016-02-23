@@ -41,6 +41,7 @@ public class BlogController extends Controller {
 	public void selectOne() {
 		Blog blog = Blog.me.findById(1, "id,content");
 		System.out.println(blog);
+		redirect("/blog");
 	}
 }
 
